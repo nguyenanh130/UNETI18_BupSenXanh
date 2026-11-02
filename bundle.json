@@ -1,0 +1,41 @@
+{
+  "format": "UNETI18_ENS_V1",
+  "team": "UNETI18 - Búp sen xanh",
+  "target": "trip_duration (seconds)",
+  "validation_rmsle": 0.3364544068104694,
+  "tune_rmsle": 0.3354646750128651,
+  "audit_rmsle": 0.3394062858938795,
+  "training_data_sha256": "8a70ed2da4e60890c062d5b08e6f18af4f83b02b759ca460af1a963987ca6b9b",
+  "models": [
+    {
+      "name": "lgb_base",
+      "kind": "lgb",
+      "mode": "base",
+      "weight": 0.27712576514932635,
+      "file": "models/lgb_base.txt",
+      "spec": "models/lgb_base.pkl",
+      "sha256": "7361d9b648cb38650bcc4e183cd2d7d77816e980a5e8bc4df6f4f9fec94b49df",
+      "spec_sha256": "59d2931ace711a7c9520a498a6fe02f72b1470ba43dc01dcbb5e0a67a7643a5b"
+    },
+    {
+      "name": "lgb_compact",
+      "kind": "lgb",
+      "mode": "compact",
+      "weight": 0.2712978772455022,
+      "file": "models/lgb_compact.txt",
+      "spec": "models/lgb_compact.pkl",
+      "sha256": "b0981be3e5aad0b3a43a8cbe548ea58f40b06d9679e56ef23cbd6e493d5c642d",
+      "spec_sha256": "856fb95deef3779346ec79b0f8eabe0912fc7ab18c58b1c0aa73e00e6c8c2653"
+    },
+    {
+      "name": "cat_compact",
+      "kind": "cat",
+      "mode": "compact",
+      "weight": 0.45157635760517156,
+      "file": "models/cat_compact.cbm",
+      "spec": "models/cat_compact.pkl",
+      "sha256": "b64a0a6527b135ecbbb6882fd1cd61ccd0db99c9ed0cc098bf9c9c999ecdf191",
+      "spec_sha256": "856fb95deef3779346ec79b0f8eabe0912fc7ab18c58b1c0aa73e00e6c8c2653"
+    }
+  ]
+}
